@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RunTracker - Login</title>
+    <link rel="stylesheet" href="styles/global.css">
+    <link rel="stylesheet" href="styles/login.css">
+</head>
+<body>
+    <div class="login-container">
+        <div class="logo-container">
+            <img src="assets/logo.svg" alt="RunTracker Logo" class="logo">
+            <h1>RunTracker</h1>
+        </div>
+        
+        <form id="login-form">
+            <div class="form-group">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" placeholder="Seu e-mail" required>
+            </div>
+            
+            <div id="error-message" class="error-message"></div>
+            
+            <button type="submit" class="btn-primary">Entrar</button>
+        </form>
+    </div>
+
+    <script src="scripts/auth.js"></script>
+</body>
+</html>

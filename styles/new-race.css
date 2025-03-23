@@ -1,0 +1,76 @@
+.race-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+header {
+    padding: 16px 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background-color: var(--card-color);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 20px;
+}
+
+.map-container {
+    flex: 1;
+    width: 100%;
+    z-index: 10;
+}
+
+.stats-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    padding: 16px;
+    background-color: var(--card-color);
+}
+
+.stat-box {
+    background-color: var(--background-color);
+    border-radius: 8px;
+    padding: 12px;
+    text-align: center;
+}
+
+.stat-label {
+    font-size: 12px;
+    color: var(--text-light);
+    margin-bottom: 4px;
+}
+
+.stat-value {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#start-btn, #stop-btn {
+    margin: 16px;
+}
+
+/* Animação do ponto pulsante */
+.pulse-marker {
+    border-radius: 50%;
+    height: 14px;
+    width: 14px;
+    background: var(--primary-color);
+    box-shadow: 0 0 0 rgba(76, 175, 80, 0.6);
+    animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(76, 175, 80, 0.6);
+    }
+    70% {
+        box-shadow: 0 0 0 10px rgba(76, 175, 80, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(76, 175, 80, 0);
+    }
+}

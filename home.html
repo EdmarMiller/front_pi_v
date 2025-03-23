@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RunTracker - Home</title>
+    <link rel="stylesheet" href="styles/global.css">
+    <link rel="stylesheet" href="styles/home.css">
+</head>
+<body>
+    <header>
+        <div class="logo-small">
+            <img src="assets/logo.svg" alt="RunTracker Logo">
+            <h2>RunTracker</h2>
+        </div>
+        <button id="logout-btn" class="btn-secondary">Sair</button>
+    </header>
+
+    <main>
+        <div class="welcome-section">
+            <h1>Bem-vindo, <span id="user-email">Runner</span>!</h1>
+            <p>Registre suas corridas e acompanhe seu progresso</p>
+        </div>
+
+        <button id="new-race-btn" class="btn-primary">
+            <img src="assets/run-icon.svg" alt="Run icon"> 
+            Nova Corrida
+        </button>
+
+        <section class="races-section">
+            <h2>Suas corridas anteriores</h2>
+            <div id="races-container" class="races-container">
+                <!-- Cards de corridas serão inseridos dinamicamente aqui -->
+                <div class="empty-races">
+                    <p>Você ainda não tem corridas registradas</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="scripts/home.js"></script>
+</body>
+</html>
